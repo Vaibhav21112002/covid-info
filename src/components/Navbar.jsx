@@ -26,6 +26,11 @@ function Navbar(props) {
                   Home
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/">
+                  (Develop By Vaibhab Gupta)
+                </a>
+              </li>
             </ul>
           </div>
         </div>
