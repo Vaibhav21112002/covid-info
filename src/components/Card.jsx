@@ -1,10 +1,11 @@
 import React from "react";
+import classnames from "classnames";
 
 function Card(props) {
   let date = new Date(props.time);
   return (
     <div className="mx-2">
-      <div className="card text-white bg-success mb-3">
+      <div className={classnames("card", "text-white", props.theme, "mb-3")}>
         <div className="card-header">
           {props.provinceState ? props.provinceState : props.country}
         </div>

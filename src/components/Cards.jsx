@@ -15,6 +15,17 @@ function Cards(props) {
     setLoading(false);
     setCovidData(data);
   };
+  const getTheme = (idx) => {
+    if (idx % 4 === 0) {
+      return "bg-success";
+    } else if (idx % 4 === 1) {
+      return "bg-warning";
+    } else if (idx % 4 === 2) {
+      return "bg-danger";
+    } else {
+      return "bg-info";
+    }
+  };
   return (
     <div className="my-5 p-0 m-0">
       <div className="container d-flex flex-column justify-content-center">
@@ -61,7 +72,7 @@ function Cards(props) {
               provinceState={element.provinceState}
               confirmed={element.confirmed}
               deaths={element.deaths}
-              color="primary"
+              theme={getTheme(index)}
               country={props.country}
               time={element.lastUpdate}
             />
