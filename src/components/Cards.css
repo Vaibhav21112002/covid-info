@@ -1,0 +1,40 @@
+.cardBox {
+  margin: 0px 2%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.images {
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+}
+@media screen and (max-width: 1200px) {
+  .cardBox {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .images {
+    width: 45%;
+    height: 45%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .images {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cardBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .images {
+    width: 90%;
+    height: 90%;
+  }
+}
