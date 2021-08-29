@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "./Card";
 import "./Cards.css";
-import Loader from "./Loader";
+import Loader from "../Spinner/Loader";
 
 function Cards(props) {
   const [covidData, setCovidData] = useState([]);

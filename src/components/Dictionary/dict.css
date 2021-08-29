@@ -1,0 +1,33 @@
+h1,h2,h3,h4,h5,h6{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.origin{
+  text-align: justify;
+}
+
+
+.images {
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+}
+@media screen and (max-width: 1200px) {
+  .images {
+    width: 45%;
+    height: 45%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .images {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .images {
+    width: 90%;
+    height: 90%;
+  }
+}
