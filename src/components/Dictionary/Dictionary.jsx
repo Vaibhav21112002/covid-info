@@ -45,7 +45,9 @@ function Dictionary(props) {
           </button>
         </form>
         <div className="container my-4">
-          <h2 className="text-center my-3 text-muted">Your Word:</h2>
+          {!props.word.length == 0 && (
+            <h2 className="text-center my-3 text-muted">Your Word:</h2>
+          )}
           <h1 className="text-center my-3">{props.word.toUpperCase()}</h1>
         </div>
       </div>
