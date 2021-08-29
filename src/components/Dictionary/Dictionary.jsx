@@ -45,7 +45,7 @@ function Dictionary(props) {
           </button>
         </form>
         <div className="container my-4">
-          {!props.word.length == 0 && (
+          {!props.word.length === 0 && (
             <h2 className="text-center my-3 text-muted">Your Word:</h2>
           )}
           <h1 className="text-center my-3">{props.word.toUpperCase()}</h1>
@@ -124,23 +124,23 @@ function Dictionary(props) {
                 );
               })}
             </div>
-            <div className="container meaning border border-muted rounded my-2 ">
-              <h4 className="text-left ml-2 my-1">
-                <strong>Use in a Sentence</strong>
-              </h4>
-              {wordData[0].meanings[0].definitions.map((mean, index) => {
-                return (
-                  <>
-                    {mean.example && (
-                      <h5 className="text-left ml-5 my-2">
-                        &emsp;&emsp;&emsp;{index + 1}.{" "}
-                        {capitalFirstWord(mean.example)}
-                      </h5>
-                    )}
-                  </>
-                );
-              })}
-            </div>
+          </div>
+          <div className="container meaning border border-muted rounded my-2 ">
+            <h4 className="text-left ml-2 my-1">
+              <strong>Use in a Sentence</strong>
+            </h4>
+            {wordData[0].meanings[0].definitions.map((mean, index) => {
+              return (
+                <>
+                  {mean.example && (
+                    <h5 className="text-left ml-5 my-2">
+                      &emsp;&emsp;&emsp;{index + 1}.{" "}
+                      {capitalFirstWord(mean.example)}
+                    </h5>
+                  )}
+                </>
+              );
+            })}
           </div>
         </div>
       )}
